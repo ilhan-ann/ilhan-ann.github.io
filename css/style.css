@@ -1,0 +1,47 @@
+.bg-image {
+    background-image: url('../img/main_banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.image-container {
+     position: relative;
+     display: inline-block;
+}
+
+.image-container img {
+    display: block;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 130px 130px 130px rgba(12, 8, 8, 0.7);
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.bg-blur {
+    background-color: rgba(205, 205, 205, 0);
+    backdrop-filter: blur(16px);
+}
